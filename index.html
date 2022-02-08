@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Welcome to Jungleworks</title> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="index.css" />
+    
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+  </head>
+  <body>
+    <body>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <div class="sidebar">
+        <header><img
+          src="data:image/png;base64,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"
+          alt=""
+          style="width: 235px ;
+          height : 120px"
+          
+        /></header>
+        <a href="#" class="active">
+          <i class="fas fa-qrcode"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-biking"></i>          
+          <span>Drivers</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-user-friends"></i>          
+          <span>Customers</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-car"></i>          
+          <span>All Vehicles</span>
+        </a>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </div>
+
+    <section class="home">
+      <center>
+        <img
+          src="https://drive.google.com/uc?export=view&id=1-ajOX-X9VpuwmlQ8blLYRK5OQbMyUGN4"
+          alt="Selfie From google drive"
+          style="width: 1100px;
+                 height :500px"
+        
+        />
+      </center>
+      <center>
+        <img src="" alt="" id="image" />
+      </center>
+    </section>
+    <div class="heart-btn">
+      <div class="content">
+        <span class="heart"></span>
+        <span class="text">Like</span>
+        
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('.content').click(function(){
+          $('.content').toggleClass("heart-active")
+          $('.text').toggleClass("heart-active")
+          $('.numb').toggleClass("heart-active")
+          $('.heart').toggleClass("heart-active")
+        });
+      });
+    </script>
+
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+    
+  
+    
+    
+
+  
+
